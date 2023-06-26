@@ -14,15 +14,21 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@public/*": ["./public/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@theme/*": ["./src/theme/*"],
+
+      "@contexts": ["./src/contexts/export"],
+      "@constants": ["./src/constants/export"],
+      "@utils": ["src/utils/export"],
+      "@libs": ["src/libs/export"],
+      "@types": ["./src/@types/export"],
+      "@hooks": ["./src/hooks/export"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
