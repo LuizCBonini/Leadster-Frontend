@@ -1,0 +1,7 @@
+{
+  "orderByOptions": [
+    { "name": "Data de Publicação", "id": "1" },
+    { "name": "Visualizados", "id": "2" },
+    { "name": "Curtidas", "id": "3" }
+  ]
+}
