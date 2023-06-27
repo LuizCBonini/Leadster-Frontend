@@ -1,4 +1,4 @@
 export interface IFilterOptions {
   name: string
-  id: string
+  id: number
 }
