@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const VideosMenuContainer = styled.div`
   position: relative;
+  margin-top: 10rem;
   &::after {
     content: '';
     height: 0.1rem;
