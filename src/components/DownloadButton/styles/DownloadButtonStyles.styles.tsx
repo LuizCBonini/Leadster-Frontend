@@ -46,6 +46,7 @@ export const DownloadButtonIcon = styled.div<DownloadButtonProps>`
       : '#d0dee7'};
   padding: 0.5rem;
   border-radius: 0.3rem 0 0 0.3rem;
+  font-size: 1.2rem;
   color: ${props =>
     props.type === 'xls'
       ? '#00ae7f'
