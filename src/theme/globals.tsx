@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-color-dark: #1f76f0;
     --primary-color-light: #f0f8ff;
     --font-default-color: #1c3c50;
+    --font-footer-link-color: #677294;
   }
 
   /* Fonts */
@@ -64,6 +65,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     /* 1rem = 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {

@@ -12,7 +12,7 @@ import TitleTag from './styles/TitleTag.styles'
 
 const WelcomeSection = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <TitleTag>webinars exclusivos</TitleTag>
       <SubTitle>Menos Conversinha,</SubTitle>
       <TitleContainer>
