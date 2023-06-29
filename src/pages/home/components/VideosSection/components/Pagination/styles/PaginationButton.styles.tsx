@@ -1,7 +1,7 @@
 import { PaginationButtonProps } from '@types'
 import { styled } from 'styled-components'
 
-const PaginationButton = styled.p<PaginationButtonProps>`
+const PaginationButton = styled.span<PaginationButtonProps>`
   padding: 0.5rem 1.2rem;
   cursor: pointer;
   color: ${props => (props.isActive ? 'var(--primary-color)' : '')};
