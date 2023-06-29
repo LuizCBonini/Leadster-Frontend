@@ -3,7 +3,8 @@ import { styled } from 'styled-components'
 
 const CTAButtonStyles = styled.button<ButtonProps>`
   cursor: pointer;
-  border-radius: 3rem;
+  border-radius: 4rem;
+  font-size: 1.6rem;
   padding: 2rem 3rem;
   font-family: var(--plus-jakarta-sans-semibold);
   border: none;
