@@ -23,10 +23,8 @@ const GlobalStyles = createGlobalStyle`
     /* ====== declarando variáveis ======*/
     /* Fonts */
     --plus-jakarta-sans-bold-italic: 'PlusJakartaSansBoldItalic';
-    --plus-jakarta-sans-bold: 'PlusJakartaSansBold';
     --plus-jakarta-sans-extra-bold: 'PlusJakartaSansExtraBold';
     --plus-jakarta-sans-bold: 'PlusJakartaSansBold';
-    --plus-jakarta-sans-bold-italic: 'PlusJakartaSansBoldItalic';
     --plus-jakarta-sans-extra-light: 'PlusJakartaSansExtraLight';
     --plus-jakarta-sans-extra-light-italic: 'PlusJakartaSansExtraLightItalic';
     --plus-jakarta-sans-italic: 'PlusJakartaSansItalic';
