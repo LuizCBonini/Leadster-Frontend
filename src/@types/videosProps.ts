@@ -6,6 +6,7 @@ export interface VideosMenuProps {
 
 export interface VideosGridProps {
   filter: IFilterOptions
+  onChangeCardId: (cardId: number | undefined) => void
 }
 
 export interface IVideosList {

@@ -14,8 +14,9 @@ import { IVideosList, VideosGridProps } from '@types'
 // Imagens
 import thumb from '@public/images/thumbnail.png'
 
-const VideosGrid = ({ filter }: VideosGridProps) => {
+const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
   const [videosList, setVideosList] = useState<Array<IVideosList>>([])
+  const [cardId, setCardId] = useState<number | undefined>()
 
   const getVideos = useCallback(async () => {
     try {
@@ -30,10 +31,19 @@ const VideosGrid = ({ filter }: VideosGridProps) => {
     getVideos()
   }, [getVideos])
 
+  useEffect(() => {
+    onChangeCardId(cardId)
+  }, [cardId])
+
   return (
     <VideosGridContainer>
       {videosList?.map(video => (
-        <Card key={video.id} thumb={thumb} title={video.title} />
+        <Card
+          key={video.id}
+          onClick={() => setCardId(video.id)}
+          thumb={thumb}
+          title={video.title}
+        />
       ))}
     </VideosGridContainer>
   )

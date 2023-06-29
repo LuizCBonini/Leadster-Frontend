@@ -5,9 +5,9 @@ import CardImage from './styles/CardImage.styles'
 import CardTitle from './styles/CardTitle.styles'
 import { CardProps } from '@types'
 
-const Card = ({ thumb, title }: CardProps) => {
+const Card = ({ thumb, title, onClick }: CardProps) => {
   return (
-    <CardContainer>
+    <CardContainer onClick={onClick}>
       <CardImage alt="Thumbnail do video" src={thumb} />
       <CardIcon>
         <FaPlay />
