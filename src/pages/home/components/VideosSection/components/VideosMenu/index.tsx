@@ -11,7 +11,14 @@ import VideosMenuContainer from './styles/VideosMenuContainer.styles'
 import VideosMenuContent from './styles/VideosMenuContent.styles'
 import VideosMenuDropDown from './styles/VideosMenuDropDown.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const VideosMenu = ({ onChangeFilter }: VideosMenuProps) => {
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation()
   const [dropDownOptions, setDropDownOptions] = useState<Array<IFilterOptions>>(
     [],
   )
@@ -44,34 +51,36 @@ const VideosMenu = ({ onChangeFilter }: VideosMenuProps) => {
           isActive={filter.id === 1}
           onClick={() => setFilter({ id: 1, name: 'agency' })}
         >
-          Agências
+          {t('videosSection.videosMenu.buttons.agencies')}
         </Button>
         <Button
           isActive={filter.id === 2}
           onClick={() => setFilter({ id: 2, name: 'chatbot' })}
         >
-          Chatbot
+          {t('videosSection.videosMenu.buttons.chatbot')}
         </Button>
         <Button
           isActive={filter.id === 3}
           onClick={() => setFilter({ id: 3, name: 'digitalMarketing' })}
         >
-          Marketing Digital
+          {t('videosSection.videosMenu.buttons.digitalMarketing')}
         </Button>
         <Button
           isActive={filter.id === 4}
           onClick={() => setFilter({ id: 4, name: 'leadsGeneration' })}
         >
-          Geração de Leads
+          {t('videosSection.videosMenu.buttons.leadGeneration')}
         </Button>
         <Button
           isActive={filter.id === 5}
           onClick={() => setFilter({ id: 5, name: 'paidMedia' })}
         >
-          Mídia Paga
+          {t('videosSection.videosMenu.buttons.paidMedia')}
         </Button>
         <VideosMenuDropDown>
-          <VideosMenuCardLabel>Ordenar por</VideosMenuCardLabel>
+          <VideosMenuCardLabel>
+            {t('videosSection.videosMenu.dropDownLabel')}
+          </VideosMenuCardLabel>
           <DropDown options={dropDownOptions} />
         </VideosMenuDropDown>
       </VideosMenuContent>
