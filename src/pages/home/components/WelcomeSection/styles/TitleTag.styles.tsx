@@ -9,6 +9,10 @@ const TitleTag = styled.p`
   border-radius: 2rem 2rem 2rem 0.5rem;
   border: 0.2rem var(--primary-color) solid;
   margin-bottom: 2rem;
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    font-size: 1rem;
+  }
 `
 
 export default TitleTag

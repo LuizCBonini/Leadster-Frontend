@@ -16,6 +16,16 @@ const Title = styled.h1`
     bottom: 0;
     left: 0;
   }
+
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    /* Estilos para dispositivos móveis pequenos */
+    font-size: 3.3rem;
+  }
 `
 
 export default Title
