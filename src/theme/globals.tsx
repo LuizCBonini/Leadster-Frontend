@@ -73,6 +73,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: #ffffff;
     font-family: var(--plus-jakarta-sans-regular);
     font-size: 1.6rem;
+    @media screen and (max-width: 425px) {
+      /* Estilos para dispositivos móveis grandes */
+      font-size: 0.5rem;
+    }
   }
 `
 
