@@ -21,5 +21,11 @@ const CTAContainer = styled.div`
     border-radius: 8rem;
     z-index: 1;
   }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos laptops */
+    flex-direction: column;
+    height: fit-content;
+  }
 `
 export default CTAContainer

@@ -18,6 +18,10 @@ const CTAButtonStyles = styled.button<ButtonProps>`
     background-color: #fff;
     transition: 400ms ease-in-out;
   }
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    font-size: 1.4rem;
+  }
 `
 
 export default CTAButtonStyles
