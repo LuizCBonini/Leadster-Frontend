@@ -30,7 +30,6 @@ import {
 const VideosModal = ({ cardId, filter }: VideosModalProps) => {
   const [openModal, setOpenModal] = useState(false)
   const [response, setResponse] = useState<IVideosList>()
-  console.log(cardId)
 
   useMemo(async () => {
     try {
