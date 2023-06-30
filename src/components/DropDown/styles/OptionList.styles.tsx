@@ -19,6 +19,18 @@ export const OptionList = styled.ul`
   color: var(--primary-color);
   font-family: var(--plus-jakarta-sans-medium);
   font-size: 1.4rem;
+
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para laptops */
+    font-size: 1.2rem;
+    width: 80%;
+  }
 `
 export const OptionItem = styled.li`
   padding: 0.5rem;
