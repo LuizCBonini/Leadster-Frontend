@@ -12,6 +12,11 @@ const VideosMenuContainer = styled.div`
     bottom: 0;
     left: 0;
   }
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    margin-top: 3rem;
+    max-width: 100%;
+  }
 `
 
 export default VideosMenuContainer
