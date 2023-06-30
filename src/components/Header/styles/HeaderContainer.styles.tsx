@@ -5,6 +5,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: 425px) {
     /* Estilos para dispositivos móveis grandes */
