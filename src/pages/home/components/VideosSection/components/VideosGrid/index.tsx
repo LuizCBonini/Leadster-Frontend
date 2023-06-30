@@ -14,7 +14,13 @@ import { IVideosList, VideosGridProps } from '@types'
 // Imagens
 import thumb from '@public/images/thumbnail.png'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
+  const {
+    i18n: { language },
+  } = useTranslation()
   const [videosList, setVideosList] = useState<Array<IVideosList>>([])
   const [cardId, setCardId] = useState<number | undefined>()
   const [windowWidth, setWindowWidth] = useState<number>(768)
@@ -52,7 +58,7 @@ const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
               key={video.id}
               onClick={() => setCardId(video.id)}
               thumb={thumb}
-              title={video.title}
+              title={language === 'pt' ? video.title : video.titleEn}
             />
           ))
         : windowWidth > 425
@@ -63,7 +69,7 @@ const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
                 key={video.id}
                 onClick={() => setCardId(video.id)}
                 thumb={thumb}
-                title={video.title}
+                title={language === 'pt' ? video.title : video.titleEn}
               />
             ))
         : videosList
@@ -73,7 +79,7 @@ const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
                 key={video.id}
                 onClick={() => setCardId(video.id)}
                 thumb={thumb}
-                title={video.title}
+                title={language === 'pt' ? video.title : video.titleEn}
               />
             ))}
     </VideosGridContainer>

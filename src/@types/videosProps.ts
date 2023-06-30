@@ -12,6 +12,8 @@ export interface VideosGridProps {
 export interface IVideosList {
   id: number
   title: string
+  titleEn: string
   url: string
   description: number
+  descriptionEn: number
 }
