@@ -17,6 +17,15 @@ import thumb from '@public/images/thumbnail.png'
 const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
   const [videosList, setVideosList] = useState<Array<IVideosList>>([])
   const [cardId, setCardId] = useState<number | undefined>()
+  const [windowWidth, setWindowWidth] = useState<number>(768)
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const getVideos = useCallback(async () => {
     try {
@@ -37,14 +46,36 @@ const VideosGrid = ({ filter, onChangeCardId }: VideosGridProps) => {
 
   return (
     <VideosGridContainer>
-      {videosList?.map(video => (
-        <Card
-          key={video.id}
-          onClick={() => setCardId(video.id)}
-          thumb={thumb}
-          title={video.title}
-        />
-      ))}
+      {windowWidth > 768
+        ? videosList?.map(video => (
+            <Card
+              key={video.id}
+              onClick={() => setCardId(video.id)}
+              thumb={thumb}
+              title={video.title}
+            />
+          ))
+        : windowWidth > 425
+        ? videosList
+            ?.slice(0, 6)
+            .map(video => (
+              <Card
+                key={video.id}
+                onClick={() => setCardId(video.id)}
+                thumb={thumb}
+                title={video.title}
+              />
+            ))
+        : videosList
+            ?.slice(0, 3)
+            .map(video => (
+              <Card
+                key={video.id}
+                onClick={() => setCardId(video.id)}
+                thumb={thumb}
+                title={video.title}
+              />
+            ))}
     </VideosGridContainer>
   )
 }
