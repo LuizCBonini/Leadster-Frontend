@@ -6,12 +6,16 @@ import PaginationButtonContainer from './styles/PaginationButtonContainer.styles
 import PaginationContainer from './styles/PaginationContainer.styles'
 import PaginationContent from './styles/PaginationContent.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const Pagination = () => {
+  const { t } = useTranslation()
   const [pagination, setPagination] = useState(3)
   return (
     <PaginationContainer>
       <PaginationContent>
-        Página
+        {t('videosSection.page')}
         <PaginationButtonContainer>
           <PaginationButton
             isActive={pagination === 1}
