@@ -15,10 +15,7 @@ import VideosMenuDropDown from './styles/VideosMenuDropDown.styles'
 import { useTranslation } from 'react-i18next'
 
 const VideosMenu = ({ onChangeFilter }: VideosMenuProps) => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation()
+  const { t } = useTranslation()
   const [dropDownOptions, setDropDownOptions] = useState<Array<IFilterOptions>>(
     [],
   )

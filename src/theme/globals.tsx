@@ -18,7 +18,7 @@ const fontFaces = {
   PlusJakartaSansSemiBoldItalic: '/fonts/PlusJakartaSans-SemiBoldItalic.ttf',
 }
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   :root {
     /* ====== declarando variáveis ======*/
     /* Fonts */
@@ -79,5 +79,3 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 `
-
-export default GlobalStyles
