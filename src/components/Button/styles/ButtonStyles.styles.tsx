@@ -24,6 +24,16 @@ const ButtonStyle = styled.button<ButtonProps>`
     background-color: ${props => props.isActive && 'var(--primary-color-dark)'};
     transition: 200ms ease-in-out;
   }
+
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos laptops */
+    font-size: 1.2rem;
+  }
 `
 
 export default ButtonStyle
