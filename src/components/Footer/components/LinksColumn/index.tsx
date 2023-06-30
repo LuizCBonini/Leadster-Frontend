@@ -13,32 +13,62 @@ import {
   FooterLinkStrongParagraph,
 } from './styles/FooterLinks.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const LinksColumn = () => {
+  const { t } = useTranslation()
   return (
     <FooterLinksContainer>
       <FooterLinksColumn>
-        <FooterLinksTitle>Links Principais</FooterLinksTitle>
-        <FooterLinks href="#home">Home</FooterLinks>
-        <FooterLinks>Ferramenta</FooterLinks>
-        <FooterLinks>Preços</FooterLinks>
-        <FooterLinks>Contato</FooterLinks>
+        <FooterLinksTitle>
+          {t('components.Footer.firstColumn.firstColumnTitle')}
+        </FooterLinksTitle>
+        <FooterLinks href="#home">
+          {t('components.Footer.firstColumn.homeLink')}
+        </FooterLinks>
+        <FooterLinks>{t('components.Footer.firstColumn.toolLink')}</FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.firstColumn.pricesLink')}
+        </FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.firstColumn.contactLink')}
+        </FooterLinks>
       </FooterLinksColumn>
       <FooterLinksColumn>
-        <FooterLinksTitle>Cases</FooterLinksTitle>
-        <FooterLinks>Geração de Leads B2B</FooterLinks>
-        <FooterLinks>Geração de Leads em Software</FooterLinks>
-        <FooterLinks>Geração de Leads em Imobiliária</FooterLinks>
-        <FooterLinks>Cases de sucesso</FooterLinks>
+        <FooterLinksTitle>
+          {t('components.Footer.secondColumn.secondColumnTitle')}
+        </FooterLinksTitle>
+        <FooterLinks>{t('components.Footer.secondColumn.b2bLink')}</FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.secondColumn.softwareLink')}
+        </FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.secondColumn.estateSalesLink')}
+        </FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.secondColumn.successLink')}
+        </FooterLinks>
       </FooterLinksColumn>
       <FooterLinksColumn>
-        <FooterLinksTitle>Materiais</FooterLinksTitle>
-        <FooterLinks>Blog</FooterLinks>
-        <FooterLinks>Parceria com Agências</FooterLinks>
-        <FooterLinks>Guia Definitivo do Marketing</FooterLinks>
-        <FooterLinks>Materiais Gratuitos</FooterLinks>
+        <FooterLinksTitle>
+          {t('components.Footer.thirdColumn.thirdColumnTitle')}
+        </FooterLinksTitle>
+        <FooterLinks>{t('components.Footer.thirdColumn.blogLink')}</FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.thirdColumn.agencyLink')}
+        </FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.thirdColumn.marketingGuideLink')}
+        </FooterLinks>
+        <FooterLinks>
+          {t('components.Footer.thirdColumn.materialsLink')}
+        </FooterLinks>
       </FooterLinksColumn>
       <FooterLinksColumn>
-        <FooterLinksTitle>Siga a Leadster</FooterLinksTitle>
+        <FooterLinksTitle>
+          {t('components.Footer.fourthColumn.fourthColumnTitle')}
+        </FooterLinksTitle>
         <FooterLinksSocialMediaContainer>
           <FooterLinksSocialMedia
             href="https://www.linkedin.com/company/leadster-platform/"
@@ -64,7 +94,9 @@ const LinksColumn = () => {
           contato@leadster.com.br
         </FooterLinkParagraph>
         <FooterLinkParagraph>
-          <FooterLinkStrongParagraph>Telefone: </FooterLinkStrongParagraph>
+          <FooterLinkStrongParagraph>
+            {t('components.Footer.fourthColumn.phone')}{' '}
+          </FooterLinkStrongParagraph>
           &#40;42&#41; 98828-98851
         </FooterLinkParagraph>
       </FooterLinksColumn>

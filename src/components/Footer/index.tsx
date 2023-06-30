@@ -9,15 +9,21 @@ import FooterLogoContainer from './styles/FooterLogoContainer.styles'
 import FooterParagraph from './styles/FooterParagraph.styles'
 
 // Components
-import LinksColumn from './components/LinksColumn'
 import Copyright from './components/Copyright'
+import LinksColumn from './components/LinksColumn'
+
+// Translation
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <FooterContainer>
       <FooterLogoContainer>
-        <Image alt="Logo da Leadster animado" src={AnimatedLogo} />
-        <FooterParagraph>Transformando visitantes em clientes.</FooterParagraph>
+        <Image alt={t('components.Footer.footerLogoAlt')} src={AnimatedLogo} />
+        <FooterParagraph>
+          {t('components.Footer.footerParagraph')}
+        </FooterParagraph>
       </FooterLogoContainer>
       <LinksColumn />
       <Copyright />
