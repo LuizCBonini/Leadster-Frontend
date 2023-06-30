@@ -1,0 +1,91 @@
+{
+  "translation": {
+    "components": {
+      "dropDown": "Select an option",
+      "Header": {
+        "headerLogoAlt": "Leadster logo"
+      },
+      "Footer": {
+        "footerLogoAlt": "animated Leadster logo",
+        "footerParagraph": "Turning visitors into customers.",
+        "firstColumn": {
+          "firstColumnTitle": "Main Links",
+          "homeLink": "Home",
+          "toolLink": "Tools",
+          "pricesLink": "Prices",
+          "contactLink": "Contact" 
+        },
+        "secondColumn": {
+          "secondColumnTitle": "Cases",
+          "b2bLink": "B2B Lead Generation",
+          "softwareLink": "Lead Generation in Software",
+          "estateSalesLink": "Lead Generation in Real Estate",
+          "successLink": "Success Stories"
+        },
+        "thirdColumn": {
+          "thirdColumnTitle": "Materials",
+          "blogLink": "Blog",
+          "agencyLink": "Partnerships with Agencies",
+          "marketingGuideLink": "Definitive Marketing Guide",
+          "materialsLink": "Free Materials"
+        },
+        "fourthColumn": {
+          "fourthColumnTitle": "Follow Leadster",
+          "phone": "Phone"
+        },
+        "copright": "All rights reserved",
+        "terms": "Terms of use"
+      }
+    },
+    "welcome": {
+      "tag": "exclusive webinars",
+      "subTitle": "Less Small Talk,",
+      "title": "More conversion",
+      "slogan": {
+        "part1": "Discover the",
+        "part2": "game-changing",
+        "part3": "strategies and learn how to apply them to your business."
+      },
+      "imageAssetAlt": "Three light blue lines that adorn the title."
+    },
+    "videosSection": {
+      "videosMenu": {
+        "buttons": {
+          "agencies": "Agencies",
+          "chatbot": "Chatbot",
+          "digitalMarketing": "Digital Marketing",
+          "leadGeneration": "Lead Generation",
+          "paidMedia": "Paid Media"
+        },
+        "dropDownLabel": "Sort by"
+      },
+
+      "videosModal": {
+        "downloadTitle": "Downloads",
+        "descriptionTitle": "Description"
+      },
+      "page": "Page"
+    },
+
+    "callToAction": {
+      "graphicsImgAlt": "The leads gained with Leadster compared to the contact form and WhatsApp button.",
+      "title": {
+        "part1": "Ready to triple your",
+        "part2": "Lead Generation?"
+      },
+      "subTitle": {
+        "part1": "Creation and activation in",
+        "part2": "4 minutes."
+      },
+      "button": "VIEW DEMONSTRATION",
+      "RDSeal": "RD Station Seal, top 10 - Most Used Apps",
+      "cardIcon": "Icon representing that credit card is not required.",
+      "cardParagraph": {
+        "part1": "No",
+        "part2": "credit card necessary."
+      },
+      "starsAlt": "4.9 golden stars",
+      "starsParagraph": "4.9/5 average satisfaction rating."
+    }
+  }
+}

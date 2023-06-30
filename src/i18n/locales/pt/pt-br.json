@@ -1,0 +1,92 @@
+{
+  "translation": {
+    "components": {
+      "dropDown": "Selecione uma opção",
+      "Header": {
+        "headerLogoAlt": "Logo da Leadster"
+      },
+      "Footer": {
+        "footerLogoAlt": "Logo da Leadster animado",
+        "footerParagraph": "Transformando visitantes em clientes.",
+        "firstColumn": {
+          "firstColumnTitle": "Links Principais",
+          "homeLink": "Home",
+          "toolLink": "Ferramentas",
+          "pricesLink": "Preços",
+          "contactLink": "Contato" 
+        },
+        "secondColumn": {
+          "secondColumnTitle": "Cases",
+          "b2bLink": "Geração de Leads B2B",
+          "softwareLink": "Geração de Leads em Software",
+          "estateSalesLink": "Geração de Leads em Imobiliária",
+          "successLink": "Casos de Sucesso"
+        },
+        "thirdColumn": {
+          "thirdColumnTitle": "Materiais",
+          "blogLink": "Blog",
+          "agencyLink": "Parcerias com agências",
+          "marketingGuideLink": "Guia Definitivo do Marketing",
+          "materialsLink": "Materiais Gratuitos"
+        },
+        "fourthColumn": {
+          "fourthColumnTitle": "Siga a Leadster",
+          "phone": "Telefone"
+        },
+        "copright": "Todos os direitos reservados",
+        "terms": "Terms of use"
+      }
+    },
+
+    "welcome": {
+      "tag": "webinars exclusivos",
+      "subTitle": "Menos Conversinha,",
+      "title": "Mais Conversão",
+      "slogan": {
+        "part1": "Conheça as estratégias que",
+        "part2": "mudaram o jogo",
+        "part3": "e como aplicá-las no seu negócio"
+      },
+      "imageAssetAlt": "Três linhas em azul claro que enfeitam o titulo."
+    },
+
+    "videosSection": {
+      "videosMenu": {
+        "buttons": {
+          "agencies": "Agências",
+          "chatbot": "Chatbot",
+          "digitalMarketing": "Marketing Digital",
+          "leadGeneration": "Geração de Leads",
+          "paidMedia": "Mídia Paga"
+        },
+        "dropDownLabel": "Ordenar por"
+      },
+      "videosModal": {
+        "downloadTitle": "Downloads",
+        "descriptionTitle": "Descrição"
+      },
+      "page": "Página"
+    },
+
+    "callToAction": {
+      "graphicsImgAlt": "Leads ganhos com a Leadster comparado o formulário de contato e botão de whatsapp",
+      "title": {
+        "part1": "Pronto para triplicar sua",
+        "part2": "Geração de Leads?"
+      },
+      "subTitle": {
+        "part1": "Criação e ativação em",
+        "part2": "4 minutos."
+      },
+      "button": "VER DEMONSTRAÇÃO",
+      "RDSeal": "Selo RD Station, top 10 - Apps Mais Usados",
+      "cardIcon": "Icone representando que cartão de crédito não é necessário.",
+      "cardParagraph": {
+        "part1": "Não",
+        "part2": "é necessário cartão de crédito"
+      },
+      "starsAlt": "4.9 estrelas douradas",
+      "starsParagraph": "4.9/5 média de satisfação"
+    }
+  }
+}
