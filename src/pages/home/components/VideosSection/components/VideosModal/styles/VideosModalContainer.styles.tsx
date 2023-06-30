@@ -42,12 +42,22 @@ export const VideosModalContainer = styled.div<ModalProps>`
     background-color: var(--primary-color);
     position: absolute;
   }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para laptops */
+    width: 70%;
+  }
+
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    width: 90%;
+  }
 `
 
 export const VideosModalContainerShadow = styled.div<ModalProps>`
   background-color: #333333b0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;

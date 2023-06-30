@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 
 export const VideosModalDescriptionContainer = styled.div`
   padding: 2rem;
-  max-height: 13rem;
+  max-height: 10rem;
   overflow: auto;
 `
 
