@@ -27,7 +27,14 @@ import {
   VideosModalTitleType,
 } from './styles/VideosModalTitle.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const VideosModal = ({ cardId, filter }: VideosModalProps) => {
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation()
   const [openModal, setOpenModal] = useState(false)
   const [response, setResponse] = useState<IVideosList>()
 
@@ -62,18 +69,24 @@ const VideosModal = ({ cardId, filter }: VideosModalProps) => {
         <VideosModalCloseIcon onClick={() => handleCloseModal()} />
         <VideosModalTitle>
           <VideosModalTitleType>Webinar:</VideosModalTitleType>
-          {response?.title}
+          {language === 'pt' ? response?.title : response?.titleEn}
         </VideosModalTitle>
         <VideosModalVideoComponent url={response?.url} />
         <VideosModalDescriptionContainer>
-          <VideosModalDescriptionTitle>Descrição</VideosModalDescriptionTitle>
+          <VideosModalDescriptionTitle>
+            {t('videosSection.videosModal.descriptionTitle')}
+          </VideosModalDescriptionTitle>
           <VideosModalDescriptionContent>
-            {response?.description}
+            {language === 'pt'
+              ? response?.description
+              : response?.descriptionEn}
           </VideosModalDescriptionContent>
         </VideosModalDescriptionContainer>
 
         <VideosModalDescriptionContainer>
-          <VideosModalDescriptionTitle>Downloads</VideosModalDescriptionTitle>
+          <VideosModalDescriptionTitle>
+            {t('videosSection.videosModal.downloadTitle')}
+          </VideosModalDescriptionTitle>
           <VideosModalDescriptionButtons>
             <DownloadButton name="Spreadsheet" type="xls" />
             <DownloadButton name="Document" type="doc" />
