@@ -6,6 +6,10 @@ export const FooterLinksContainer = styled.div`
   width: 80%;
   column-gap: 2rem;
   padding-bottom: 5rem;
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos laptops */
+    flex-direction: column;
+  }
 `
 
 export const FooterLinksColumn = styled.div`
@@ -18,6 +22,12 @@ export const FooterLinksColumn = styled.div`
 export const FooterLinksTitle = styled.p`
   font-family: var(--plus-jakarta-sans-semibold);
   margin-bottom: 4rem;
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos laptops */
+    margin-bottom: 0;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
 `
 
 export const FooterLinks = styled.a`
@@ -56,5 +66,10 @@ export const FooterLinksSocialMedia = styled.a`
   &:hover {
     color: #fff;
     background-color: var(--primary-color);
+  }
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    padding: 1.5rem 1.9rem;
+    font-size: 1.6rem;
   }
 `

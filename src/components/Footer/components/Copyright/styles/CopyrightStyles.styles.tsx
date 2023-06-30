@@ -16,6 +16,12 @@ export const CopyrightContainer = styled.div`
     top: 0;
     left: 0;
   }
+  @media screen and (max-width: 425px) {
+    /* Estilos para dispositivos móveis grandes */
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+  }
 `
 
 export const CopyrightParagraph = styled.p`
