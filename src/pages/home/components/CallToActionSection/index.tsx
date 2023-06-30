@@ -20,40 +20,43 @@ import {
 import CTAGraphicImage from './styles/CTAGraphicImage.styled'
 import CTAButtonContainer from './styles/CTARDStation.styled'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const CallToActionSection = () => {
+  const { t } = useTranslation()
   return (
     <CTAContainer>
       <CTAGraphicImage
-        alt="Comparativo de Leads ganhos com a Leadster comparado a formulário de contato e botão de whatsapp"
+        alt={t('callToAction.graphicsImgAlt')}
         src={GraphicImage}
       />
       <CTAContentContainer>
         <CTAContentTitle>
-          Pronto para triplicar sua{' '}
-          <CTAContentStrong>Geração de Leads?</CTAContentStrong>
+          {t('callToAction.title.part1')}{' '}
+          <CTAContentStrong>{t('callToAction.title.part2')}</CTAContentStrong>
         </CTAContentTitle>
         <CTAContentSubTitle>
-          Criação e ativação em <CTAContentStrong>4 minutos.</CTAContentStrong>
+          {t('callToAction.subTitle.part1')}{' '}
+          <CTAContentStrong>
+            {t('callToAction.subTitle.part2')}
+          </CTAContentStrong>
         </CTAContentSubTitle>
         <CTAButtonContainer>
-          <CTAButton>VER DEMONSTRAÇÃO</CTAButton>
-          <Image
-            alt="Selo RD Station, top 10 - Apps Mais Usados"
-            src={RDStation}
-          />
+          <CTAButton>{t('callToAction.button')}</CTAButton>
+          <Image alt={t('callToAction.RdSeal')} src={RDStation} />
         </CTAButtonContainer>
         <CTAContentCreditCard>
-          <Image
-            alt="Icone representando que cartão de crédito não é necessario."
-            src={CreditCard}
-          />
+          <Image alt={t('callToAction.cardIcon')} src={CreditCard} />
           <CTAContentCreditCardParagraph>
-            <CTAContentStrong>Não</CTAContentStrong> é necessário cartão de
-            crédito
+            <CTAContentStrong>
+              {t('callToAction.cardParagraph.part1')}
+            </CTAContentStrong>{' '}
+            {t('callToAction.cardParagraph.part2')}
           </CTAContentCreditCardParagraph>
-          <Image alt="4.9 estrelas douradas" src={rating} />
+          <Image alt={t('callToAction.starsAlt')} src={rating} />
           <CTAContentRatingParagraph>
-            4.9/5 média de satisfação
+            {t('callToAction.starsParagraph')}
           </CTAContentRatingParagraph>
         </CTAContentCreditCard>
       </CTAContentContainer>
