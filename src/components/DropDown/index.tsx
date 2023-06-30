@@ -12,9 +12,17 @@ import CustomSelectContainer from './styles/CustomSelectContainer.styles'
 import { OptionItem, OptionList } from './styles/OptionList.styles'
 import SelectButton from './styles/SelectButton.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const DropDown = ({ options }: DropDownProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState<IFilterOptions>()
+
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation()
 
   const toggleSelect = () => {
     setIsOpen(!isOpen)
@@ -28,7 +36,11 @@ const DropDown = ({ options }: DropDownProps) => {
   return (
     <CustomSelectContainer>
       <SelectButton isOpen={isOpen} onClick={toggleSelect}>
-        {selectedOption ? selectedOption.name : 'Selecione uma opção'}
+        {selectedOption
+          ? language === 'pt'
+            ? selectedOption.name
+            : selectedOption.nameEn
+          : `${t('components.dropDown')}`}
         <ArrowIcon isOpen={isOpen}>
           <BiSolidDownArrow />
         </ArrowIcon>
@@ -40,7 +52,7 @@ const DropDown = ({ options }: DropDownProps) => {
               key={option.id}
               onClick={() => handleOptionClick(option)}
             >
-              {option.name}
+              {language === 'pt' ? option.name : option.nameEn}
             </OptionItem>
           ))}
         </OptionList>
