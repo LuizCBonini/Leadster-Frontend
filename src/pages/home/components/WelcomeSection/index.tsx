@@ -10,22 +10,23 @@ import Title from './styles/Title.styles'
 import TitleContainer from './styles/TitleContainer.styles'
 import TitleTag from './styles/TitleTag.styles'
 
+// Translation
+import { useTranslation } from 'react-i18next'
+
 const WelcomeSection = () => {
+  const { t } = useTranslation()
   return (
     <HomeContainer id="home">
-      <TitleTag>webinars exclusivos</TitleTag>
-      <SubTitle>Menos Conversinha,</SubTitle>
+      <TitleTag>{t('welcome.tag')}</TitleTag>
+      <SubTitle>{t('welcome.subTitle')}</SubTitle>
       <TitleContainer>
-        <ImageAsset
-          alt="Três linhas em azul claro que enfeitam o titulo."
-          src={assetHeader}
-        />
-        <Title>Mais Conversão</Title>
+        <ImageAsset alt={t('welcome.imageAssetAlt')} src={assetHeader} />
+        <Title>{t('welcome.title')}</Title>
       </TitleContainer>
       <Slogan>
-        Conheça as estratégias que{' '}
-        <BoldLetterSlogan>mudaram o jogo</BoldLetterSlogan> e como aplicá-las no
-        seu negócio
+        {t('welcome.slogan.part1')}{' '}
+        <BoldLetterSlogan>{t('welcome.slogan.part2')}</BoldLetterSlogan>{' '}
+        {t('welcome.slogan.part3')}
       </Slogan>
     </HomeContainer>
   )
