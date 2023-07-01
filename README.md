@@ -40,7 +40,7 @@ ou:
 npm run start:api
 ```
 
-Então podemos rodar o front em desenvolvimento:
+Então, com a api rodando, podemos rodar o front em um terminal separado:
 ```
 yarn dev
 ```
