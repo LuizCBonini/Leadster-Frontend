@@ -1,34 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Leadster 
 
-## Getting Started
+Projeto feito para concorrer a uma vaga na Leadster no cargo de front-end.
 
-First, run the development server:
+### 💻 Deploy
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+* [Leadster por Luiz Carlos Bonini](https://leadster-frontend-luiztest.vercel.app) - Deploy na Versel
+
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+### 🔧 Instalação
+
+Para iniciar e ter um ambiente de desenvolvimento em execução, siga os passos nesta exata sequencia:
+
+Primeiro clone o repositório para a sua máquina:
+
+```
+git clone https://github.com/LuizCBonini/Leadster-Frontend.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Em seguida, dentro do projeto agora clonado para a sua máquina, instale as dependências:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn
+```
+ou:
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Agora é importante que primeiro startemos a api:
 
-## Learn More
+```
+yarn start:api
+```
+ou:
+```
+npm run start:api
+```
 
-To learn more about Next.js, take a look at the following resources:
+Então podemos rodar o front em desenvolvimento:
+```
+yarn dev
+```
+ou: 
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+E está pronto para começar o desenvolvimento de novas features.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ✅ Decisões
 
-## Deploy on Vercel
+Fiz este projeto pensando na sua escalabilidade e na sua manutenibilidade, por isso algumas das decisões tomadas para este projeto foram:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Utilizei do eslint e do prettier para que qualquer futuro dev, que pegasse o código para refatorar ou implementar novas features fosse corretamente guidado a seguir o mesmo padrão do código font.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- TypeScript foi a escolha para que a detecção de erros seja feita em tempo de produção, o que ajuda a encontrar bugs mais cedo no processo de desenvolvimento. Além de ajudar na refatoração, manutenção e documentação do projeto.
+  
+- Clean Code e Componentização foram as metodologias utilizados para a organização do código, cada componente é responsável por uma tarefa específica e encapsula sua própria lógica, estado e apresentação. Isso torna o código mais legível, fácil de entender e manter.
+  
+- Também tomei a liberdade de me inspirar na frase "menos conversinha, mais conversão" e implementar algo que acredito ser importante para a Leadster que foi a internacionalização (i18n), pois com um site/sistema que se adapte à diferentes idiomas e culturas, é possível alcançar um público mais amplo e explorar novos mercados. Isso pode aumentar o alcance e potencial de crescimento, permitindo que atenda a usuários de diferentes países e regiões.
+
+  (Branchs não foram excluidas para que possa ser avaliado a linha de pensamento e de criação do projeto)
+
+## 🛠️ Construído com
+
+* [TypeScript](https://www.typescriptlang.org) - Linguagem de programação
+* [Next](https://nextjs.org) - O framework web usado
+* [Yarn](https://yarnpkg.com) - Gerente de Dependência
+* [Axios](https://axios-http.com/ptbr/docs/intro) - Lib para requisições HTTP
+* [i18next](https://www.i18next.com) - Framework de internacionalização
+* [Styled-Components](https://styled-components.com) - CSS-in-JS
+* [Json-Server](https://www.npmjs.com/package/json-server) - Simulação de uma api
+
+## ✒️ Autores
+
+* **Luiz Carlos Bonini** - *Criação do projeto* - [LuizCBonini](https://github.com/LuizCBonini)
+
+## 🎁 Gratidão
+
+Desenvolver este projeto não só foi um excelente teste sobre meus conhecimentos atuais em progrmação como também foi uma bussula inpiradora que me apontou o norte para onse seguir estudando e ter uma visão melhor de meu futuro como dev. 
+
+---
+⌨️ com ❤️ por [Luiz Carlos Bonini](https://www.linkedin.com/in/dev-luiz-carlos/)😊
