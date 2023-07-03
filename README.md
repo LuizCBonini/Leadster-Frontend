@@ -81,7 +81,7 @@ Fiz este projeto pensando na sua escalabilidade e na sua manutenibilidade, por i
 
 ## 🎁 Gratidão
 
-Desenvolver este projeto não só foi um excelente teste sobre meus conhecimentos atuais em progrmação como também foi uma bussula inpiradora que me apontou o norte para onse seguir estudando e ter uma visão melhor de meu futuro como dev. 
+Desenvolver este projeto não só foi um excelente teste sobre meus conhecimentos atuais em progrmação como também foi uma bússola inpiradora que me apontou o norte para onde seguir estudando e ter uma visão melhor de meu futuro como dev. 
 
 ---
 ⌨️ com ❤️ por [Luiz Carlos Bonini](https://www.linkedin.com/in/dev-luiz-carlos/)😊
